@@ -17,6 +17,7 @@ public abstract class Account {
     private float balance;
     private List<Transaction> transactions;
 
+
     public void debit(float amount) {
         if (amount <= 0) {
             throw new IllegalArgumentException("O valor deve ser maior que zero.");
@@ -34,4 +35,12 @@ public abstract class Account {
         balance += amount;
     }
 
+    @Override
+    public String toString() {
+        return "Account{" +
+                "  Número conta: '" + number + '\'' +
+                ", Saldo: " + balance +
+                ", Transações: " + transactions +
+                '}';
+    }
 }

@@ -20,4 +20,15 @@ public class Transaction {
     private Account source;
     private Account destination;
 
+    @Override
+    public String toString() {
+        return "Transaction {" +
+                "Data: " + dateTime +
+                ", Quantidade: " + amount +
+                ", Tipo: " + type +
+                ", Origem: " + source +
+                ", Destino:" + destination +
+                '}';
+    }
+
 }

@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -17,6 +18,12 @@ public class User {
     private String cpf;
     private String email;
     private String password;
-    List<Account> accounts;
+    private List<Account> accounts = new ArrayList<>();
 
+
+    public Object verifyUser(User user) {
+        if (user.)
+    }
 }
+
+
